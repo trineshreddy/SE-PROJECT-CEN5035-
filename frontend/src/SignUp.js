@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import gatorLogo from './assets/gator-logo.png';
 import './SignUp.css';
 
 function SignUp({
@@ -84,6 +85,7 @@ function SignUp({
         <div className="signup-page">
             <form className="sign-up-form" onSubmit={validateForm}>
                 <div className="signup-header">
+                    <img src={gatorLogo} alt="GatorDash" className="auth-logo" />
                     <h2>Create Account</h2>
                     <p className="signup-subtitle">Join GatorDash today</p>
                 </div>

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import gatorLogo from './assets/gator-logo.png';
 import './SignIn.css';
 
 function SignIn({ onSignIn }) {
@@ -15,6 +16,7 @@ function SignIn({ onSignIn }) {
         <div className="signin-page">
             <form className="signin-container" onSubmit={handleSubmit}>
                 <div className="signin-header">
+                    <img src={gatorLogo} alt="GatorDash" className="auth-logo" />
                     <h2>Welcome Back</h2>
                     <p className="signin-subtitle">Sign in to GatorDash</p>
                 </div>

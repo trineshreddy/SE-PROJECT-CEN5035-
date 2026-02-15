@@ -3,33 +3,33 @@
 
 /* ── Design System — Color Palette & Tokens ── */
 :root {
-  --color-navy: #0a1628;
-  --color-navy-light: #132240;
-  --color-navy-mid: #1b2d4f;
+  --color-navy: #001845;
+  --color-navy-light: #002366;
+  --color-navy-mid: #012a78;
 
-  --color-orange: #fa5f2f;
-  --color-orange-hover: #e04e20;
-  --color-orange-glow: rgba(250, 95, 47, 0.35);
+  --color-orange: #FA4616;
+  --color-orange-hover: #d93b10;
+  --color-orange-glow: rgba(250, 70, 22, 0.35);
 
   --color-white: #ffffff;
-  --color-gray-100: #f4f6f9;
-  --color-gray-300: #c5cdd8;
-  --color-gray-500: #6b7a90;
-  --color-gray-700: #2e3a4e;
+  --color-gray-100: #f0f4fa;
+  --color-gray-300: #b8c4d8;
+  --color-gray-500: #6b7fa0;
+  --color-gray-700: #2e3a5e;
 
   --color-success: #22c55e;
   --color-error: #ef4444;
   --color-warning: #f59e0b;
   --color-info: #3b82f6;
 
-  --glass-bg: rgba(255, 255, 255, 0.08);
-  --glass-border: rgba(255, 255, 255, 0.12);
-  --glass-blur: 16px;
+  --glass-bg: rgba(255, 255, 255, 0.06);
+  --glass-border: rgba(255, 255, 255, 0.10);
+  --glass-blur: 18px;
 
-  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.15);
-  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.25);
-  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.35);
-  --shadow-glow: 0 0 20px var(--color-orange-glow);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.18);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.28);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.38);
+  --shadow-glow: 0 0 24px var(--color-orange-glow);
 
   --font-heading: 'Poppins', sans-serif;
   --font-body: 'Inter', sans-serif;
