@@ -1,4 +1,4 @@
-/* ── SignIn Page ── */
+/*SignIn Page*/
 .signin-page {
     width: 100%;
     min-height: 100vh;
@@ -9,7 +9,7 @@
     padding: 40px 20px;
 }
 
-/* ── Glassmorphism Card ── */
+/* Glassmorphism Card */
 .signin-container {
     width: 100%;
     max-width: 400px;
@@ -22,7 +22,7 @@
     box-shadow: var(--shadow-lg), 0 0 40px rgba(250, 70, 22, 0.08);
 }
 
-/* ── Header ── */
+/*Header*/
 .signin-header {
     text-align: center;
     margin-bottom: 32px;
@@ -52,7 +52,7 @@
     font-size: 0.95rem;
 }
 
-/* ── Input Groups ── */
+/*Input Groups  */
 .input-group {
     margin-bottom: 20px;
 }
@@ -114,7 +114,7 @@
     opacity: 1;
 }
 
-/* ── Submit Button ── */
+/* Submit Button */
 .signin-btn {
     width: 100%;
     padding: 14px;
@@ -134,7 +134,7 @@
     box-shadow: var(--shadow-glow);
 }
 
-/* ── Links ── */
+/*  Links  */
 .signin-links {
     text-align: center;
     margin-top: 20px;

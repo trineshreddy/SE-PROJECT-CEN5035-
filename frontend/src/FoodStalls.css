@@ -1,11 +1,10 @@
-/* ── Restaurant Page ── */
+/* Restaurant Page*/
 .foodstalls-page {
     min-height: 100vh;
     background: linear-gradient(180deg, var(--color-navy) 0%, var(--color-navy-light) 100%);
 }
 
-/* ── Heading ── */
-/* ── Heading ── */
+/*Heading*/
 .stalls-heading {
     text-align: center;
     font-family: var(--font-heading);
@@ -27,7 +26,7 @@
     line-height: 1.2;
 }
 
-/* ── Responsive Grid ── */
+/* Responsive Grid  */
 .stalls-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -37,7 +36,7 @@
     padding: 0 32px 60px;
 }
 
-/* ── Stall Card ── */
+/* Stall Card*/
 .stall-card {
     background: rgba(255, 255, 255, 0.07);
     backdrop-filter: blur(var(--glass-blur));
@@ -53,7 +52,7 @@
 @keyframes cardFadeIn {
     from {
         opacity: 0;
-        transform: translateY(24px);
+        transform: translateY(40px);
     }
 
     to {
@@ -118,7 +117,7 @@
     letter-spacing: 0.5px;
 }
 
-/* ── Stall Content (Flex Row) ── */
+/* Stall Content (Flex Row) */
 .stall-content {
     display: flex;
     justify-content: space-between;
@@ -182,7 +181,7 @@
     margin: 0;
 }
 
-/* ── Arrow ── */
+/*Arrow */
 .stall-arrow {
     color: var(--color-gray-500);
     font-size: 1.2rem;

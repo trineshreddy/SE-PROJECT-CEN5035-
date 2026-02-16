@@ -1,4 +1,4 @@
-/* ── SignUp Page ── */
+/*SignUp Page */
 .signup-page {
     width: 100%;
     min-height: 100vh;
@@ -9,7 +9,7 @@
     padding: 40px 20px;
 }
 
-/* ── Glassmorphism Form Card ── */
+/*Glassmorphism Form Card  */
 .sign-up-form {
     width: 100%;
     max-width: 440px;
@@ -160,7 +160,7 @@
     color: var(--color-orange-hover);
 }
 
-/* ── Error Messages ── */
+/* error Messages  */
 .error {
     color: var(--color-error);
     font-size: 0.75rem;
@@ -193,7 +193,7 @@
     animation: shake 0.4s ease;
 }
 
-/* ── Password Strength Meter ── */
+/* Password StrengtMeter*/
 .strength-meter {
     display: flex;
     align-items: center;

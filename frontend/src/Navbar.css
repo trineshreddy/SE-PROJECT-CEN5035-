@@ -1,4 +1,4 @@
-/* ── Navbar ── */
+/*Navbar  */
 .navbar {
     display: flex;
     align-items: center;
@@ -13,7 +13,7 @@
     z-index: 100;
 }
 
-/* ── Brand ── */
+/*Brand */
 .navbar-brand {
     font-family: var(--font-heading);
     font-size: 1.5rem;
@@ -47,7 +47,7 @@
     color: var(--color-orange);
 }
 
-/* ── Sign Out Button ── */
+/*  Sign Out Button */
 .signout-btn {
     padding: 8px 20px;
     background: transparent;
