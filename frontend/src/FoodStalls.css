@@ -118,22 +118,79 @@
     letter-spacing: 0.5px;
 }
 
-/* ── Stall Info ── */
-.stall-info {
-    text-align: center;
-    padding: 14px 16px;
+/* ── Stall Content (Flex Row) ── */
+.stall-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
 }
 
+.stall-info {
+    flex: 1;
+    text-align: left;
+}
+
+.stall-header-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 4px;
+}
+
+/* ── Status Badges ── */
+.status-badge {
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 4px 8px;
+    border-radius: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.status-badge.open {
+    background: rgba(46, 204, 113, 0.2);
+    color: #2ecc71;
+    border: 1px solid rgba(46, 204, 113, 0.4);
+}
+
+.status-badge.closing {
+    background: rgba(243, 156, 18, 0.2);
+    color: #f39c12;
+    border: 1px solid rgba(243, 156, 18, 0.4);
+}
+
+.status-badge.closed {
+    background: rgba(231, 76, 60, 0.2);
+    color: #e74c3c;
+    border: 1px solid rgba(231, 76, 60, 0.4);
+}
+
+/* ── Typography ── */
 .stall-name {
     color: var(--color-white);
     font-family: var(--font-heading);
-    font-size: 1.05rem;
+    font-size: 1.2rem;
     font-weight: 600;
-    margin-bottom: 4px;
+    margin: 0;
 }
 
 .stall-desc {
     color: var(--color-gray-500);
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-weight: 400;
+    margin: 0;
+}
+
+/* ── Arrow ── */
+.stall-arrow {
+    color: var(--color-gray-500);
+    font-size: 1.2rem;
+    margin-left: 16px;
+    transition: transform var(--transition-fast), color var(--transition-fast);
+}
+
+.stall-card:hover .stall-arrow {
+    transform: translateX(4px);
+    color: var(--color-orange);
 }
