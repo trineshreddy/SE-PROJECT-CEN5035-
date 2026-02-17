@@ -62,9 +62,9 @@
 }
 
 .stall-card:hover {
-    transform: translateY(-8px);
-    border-color: rgba(250, 70, 22, 0.5);
-    box-shadow: var(--shadow-lg), 0 0 30px rgba(250, 70, 22, 0.15);
+    transform: translateY(-4px);
+    border-color: rgba(250, 70, 22, 0.6);
+    box-shadow: var(--shadow-lg), 0 0 25px rgba(250, 70, 22, 0.12);
 }
 
 /* ── Color Bar ── */
@@ -137,7 +137,7 @@
     margin-bottom: 4px;
 }
 
-/* ── Status Badges ── */
+/*Status Badges */
 .status-badge {
     font-size: 0.75rem;
     font-weight: 700;
@@ -165,7 +165,7 @@
     border: 1px solid rgba(231, 76, 60, 0.4);
 }
 
-/* ── Typography ── */
+/* Typography */
 .stall-name {
     color: var(--color-white);
     font-family: var(--font-heading);

@@ -49,19 +49,23 @@
 
 /*  Sign Out Button */
 .signout-btn {
-    padding: 8px 20px;
+    padding: 8px 24px;
     background: transparent;
     color: var(--color-gray-300);
-    border: 1px solid var(--glass-border);
-    border-radius: var(--radius-sm);
-    font-size: 0.85rem;
-    font-weight: 500;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
     cursor: pointer;
-    transition: all var(--transition-fast);
+    transition: all var(--transition-normal);
+    position: relative;
+    overflow: hidden;
 }
 
 .signout-btn:hover {
     color: var(--color-white);
     border-color: var(--color-orange);
-    background: rgba(250, 95, 47, 0.1);
+    background: linear-gradient(90deg, rgba(250, 70, 22, 0.1), rgba(250, 70, 22, 0.05));
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(250, 70, 22, 0.2);
 }
