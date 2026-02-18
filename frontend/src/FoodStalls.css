@@ -1,47 +1,42 @@
-/* ── FoodStalls Page ── */
+/* Restaurant Page*/
 .foodstalls-page {
     min-height: 100vh;
     background: linear-gradient(180deg, var(--color-navy) 0%, var(--color-navy-light) 100%);
 }
 
-/* ── Heading ── */
+/*Heading*/
 .stalls-heading {
     text-align: center;
     font-family: var(--font-heading);
-    font-size: 2.2rem;
-    font-weight: 700;
-    letter-spacing: 1px;
-    background: linear-gradient(135deg, var(--color-white), var(--color-orange));
+    font-size: 2.5rem;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    /* Richer orange gradient matching the GatorDash theme */
+    background: linear-gradient(135deg, #FF9A76 0%, #FA4616 50%, #FFD1C1 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    margin: 48px 0 36px;
-    text-transform: uppercase;
+
+    /* Glow effect for "premium" feel on dark background */
+    text-shadow: 0 4px 20px rgba(250, 70, 22, 0.3);
+
+    margin: 50px 0 40px;
+    text-transform: capitalize;
+    /* changed from uppercase for a friendlier look */
+    line-height: 1.2;
 }
 
-/* ── Responsive Grid ── */
+/* Responsive Grid  */
 .stalls-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
     gap: 28px;
-    max-width: 1100px;
+    max-width: 600px;
     margin: 0 auto;
     padding: 0 32px 60px;
 }
 
-@media (max-width: 900px) {
-    .stalls-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 560px) {
-    .stalls-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* ── Stall Card ── */
+/* Stall Card*/
 .stall-card {
     background: rgba(255, 255, 255, 0.07);
     backdrop-filter: blur(var(--glass-blur));
@@ -57,7 +52,7 @@
 @keyframes cardFadeIn {
     from {
         opacity: 0;
-        transform: translateY(24px);
+        transform: translateY(40px);
     }
 
     to {
@@ -67,9 +62,9 @@
 }
 
 .stall-card:hover {
-    transform: translateY(-8px);
-    border-color: rgba(250, 70, 22, 0.5);
-    box-shadow: var(--shadow-lg), 0 0 30px rgba(250, 70, 22, 0.15);
+    transform: translateY(-4px);
+    border-color: rgba(250, 70, 22, 0.6);
+    box-shadow: var(--shadow-lg), 0 0 25px rgba(250, 70, 22, 0.12);
 }
 
 /* ── Color Bar ── */
@@ -78,7 +73,7 @@
     width: 100%;
 }
 
-/* ── Image Wrapper + Overlay ── */
+
 .stall-img-wrapper {
     position: relative;
     overflow: hidden;
@@ -122,22 +117,79 @@
     letter-spacing: 0.5px;
 }
 
-/* ── Stall Info ── */
-.stall-info {
-    text-align: center;
-    padding: 14px 16px;
+/* Stall Content (Flex Row) */
+.stall-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
 }
 
-.stall-name {
-    color: var(--color-white);
-    font-family: var(--font-heading);
-    font-size: 1.05rem;
-    font-weight: 600;
+.stall-info {
+    flex: 1;
+    text-align: left;
+}
+
+.stall-header-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
     margin-bottom: 4px;
 }
 
+/*Status Badges */
+.status-badge {
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 4px 8px;
+    border-radius: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.status-badge.open {
+    background: rgba(46, 204, 113, 0.2);
+    color: #2ecc71;
+    border: 1px solid rgba(46, 204, 113, 0.4);
+}
+
+.status-badge.closing {
+    background: rgba(243, 156, 18, 0.2);
+    color: #f39c12;
+    border: 1px solid rgba(243, 156, 18, 0.4);
+}
+
+.status-badge.closed {
+    background: rgba(231, 76, 60, 0.2);
+    color: #e74c3c;
+    border: 1px solid rgba(231, 76, 60, 0.4);
+}
+
+/* Typography */
+.stall-name {
+    color: var(--color-white);
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0;
+}
+
 .stall-desc {
-    color: var(--color-gray-500);
-    font-size: 0.8rem;
+    color: var(--color-gray-300);
+    font-size: 0.9rem;
     font-weight: 400;
+    margin: 0;
+}
+
+/*Arrow */
+.stall-arrow {
+    color: var(--color-gray-500);
+    font-size: 1.2rem;
+    margin-left: 16px;
+    transition: transform var(--transition-fast), color var(--transition-fast);
+}
+
+.stall-card:hover .stall-arrow {
+    transform: translateX(4px);
+    color: var(--color-orange);
 }

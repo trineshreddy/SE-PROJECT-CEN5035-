@@ -49,7 +49,11 @@ function SignIn({ onSignIn }) {
                             onClick={() => setShowPassword(!showPassword)}
                             aria-label={showPassword ? 'Hide password' : 'Show password'}
                         >
-                            {showPassword ? '🙈' : '👁'}
+                            {showPassword ? (
+                                <span style={{ textDecoration: 'line-through' }}>👁</span>
+                            ) : (
+                                '👁'
+                            )}
                         </button>
                     </div>
                 </div>

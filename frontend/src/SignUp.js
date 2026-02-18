@@ -80,7 +80,7 @@ function SignUp({
         setErrors(newErrors);
 
         if (Object.keys(newErrors).length === 0) {
-            console.log('Form submitted successfully:', { name, email, phone, password });
+            // Form submission logic here
         }
     };
 
@@ -144,7 +144,11 @@ function SignUp({
                             onClick={() => setShowPassword(!showPassword)}
                             aria-label={showPassword ? 'Hide password' : 'Show password'}
                         >
-                            {showPassword ? '🙈' : '👁'}
+                            {showPassword ? (
+                                <span style={{ textDecoration: 'line-through' }}>👁</span>
+                            ) : (
+                                '👁'
+                            )}
                         </button>
                     </div>
                     {errors.password && <span className="error">{errors.password}</span>}
@@ -181,7 +185,11 @@ function SignUp({
                             onClick={() => setShowConfirmPassword(!showConfirmPassword)}
                             aria-label={showConfirmPassword ? 'Hide password' : 'Show password'}
                         >
-                            {showConfirmPassword ? '🙈' : '👁'}
+                            {showConfirmPassword ? (
+                                <span style={{ textDecoration: 'line-through' }}>👁</span>
+                            ) : (
+                                '👁'
+                            )}
                         </button>
                     </div>
                     {errors.confirmPassword && <span className="error">{errors.confirmPassword}</span>}
