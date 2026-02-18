@@ -10,7 +10,7 @@ type User struct {
 	Name      string    `gorm:"not null" json:"name"`
 	Email     string    `gorm:"uniqueIndex;not null" json:"email"`
 	Phone     string    `gorm:"not null" json:"phone"`
-	Password  string    `gorm:"not null" json:"-"` // Don't include password in JSON responses
+	Password  string    `gorm:"not null" json:"-"`
 	CreatedAt time.Time `gorm:"autoCreateTime" json:"created_at"`
 	UpdatedAt time.Time `gorm:"autoUpdateTime" json:"updated_at"`
 }
