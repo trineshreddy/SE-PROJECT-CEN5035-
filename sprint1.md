@@ -63,9 +63,12 @@
 - Update User API implemented
 - Delete User API implemented
 - APIs tested using Postman
+  
 **Backend Work Distribution**
 - Raghul: Signup, Signin, Setup Go project structure,Get All Users
 - Trinesh : Get User by ID, Update User, Delete User, Configure PostgreSQL database connection
+
+  
 **Frontend**
 - React project initialized with custom design system and UF Gator branding
 - Sign Up page with full form validation (email, phone, password rules)
