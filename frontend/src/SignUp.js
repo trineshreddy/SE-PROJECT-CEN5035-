@@ -80,7 +80,7 @@ function SignUp({
         setErrors(newErrors);
 
         if (Object.keys(newErrors).length === 0) {
-            // Form submission logic here
+            console.log('Form submitted successfully:', { name, email, phone, password });
         }
     };
 
