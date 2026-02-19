@@ -87,4 +87,3 @@
 - Role-based access control
 
 Reason: Sprint 1 focused primarily on building foundational user management APIs and a complete, polished frontend foundation.
-
